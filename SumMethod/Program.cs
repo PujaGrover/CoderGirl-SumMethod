@@ -8,10 +8,10 @@ namespace SumMethod
         {
             Console.WriteLine("Enter an integer: ");
             int inputValue = int.Parse(Console.ReadLine());
-            Console.WriteLine("Sum of all integer numbers up to and including given value is:" + SumMethod(inputValue));
+            Console.WriteLine("Sum of all integer numbers up to and including given value is:" + Sum(inputValue));
             Console.ReadLine();
         }
-        private static int SumMethod(int value)
+        public static int Sum(int value)
         {
             int n = value;
             return n * (n + 1) / 2;
