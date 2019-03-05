@@ -6,7 +6,15 @@ namespace SumMethod
     {
         public static void Main()
         {
+            Console.WriteLine("Enter an integer: ");
+            int inputValue = int.Parse(Console.ReadLine());
+            Console.WriteLine("Sum of all integer numbers up to and including given value is:" + SumMethod(inputValue));
             Console.ReadLine();
+        }
+        private static int SumMethod(int value)
+        {
+            int n = value;
+            return n * (n + 1) / 2;
         }
 
         // TODO: Create a method that returns the sum of all integer numbers up to and including given value. 
